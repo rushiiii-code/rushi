@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rushi Patil - Portfolio, Education, Goals, Achievements" />
+  <meta name="author" content="Rushi Patil" />
+  <meta property="og:title" content="Rushi Patil Portfolio" />
+  <meta property="og:image" content="preview.png" />
+  <meta property="og:description" content="Personal introduction portfolio site." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="favicon.ico" />
+  <title>Rushi Patil Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-tr from-white via-indigo-50 to-purple-100 text-gray-800 font-inter">
+  <!-- Loader -->
+  <div id="loading" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+    <div class="animate-spin h-14 w-14 rounded-full border-t-4 border-purple-600 border-opacity-50"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white shadow-md px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-purple-700">Rushi Patil</h1>
+    <nav class="hidden md:flex space-x-6 text-md font-medium text-gray-700">
+      <a href="#about" class="hover:text-purple-600">About</a>
+      <a href="#achievements" class="hover:text-purple-600">Achievements</a>
+      <a href="#goals" class="hover:text-purple-600">Goals</a>
+      <a href="#personal" class="hover:text-purple-600">Personal</a>
+      <a href="#contact" class="hover:text-purple-600">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden">
+      <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md px-6 py-4 space-y-2 text-center">
+    <a href="#about" class="block">About</a>
+    <a href="#achievements" class="block">Achievements</a>
+    <a href="#goals" class="block">Goals</a>
+    <a href="#personal" class="block">Personal</a>
+    <a href="#contact" class="block">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="text-center px-6 py-12 bg-white">
+    <img src="photo.jpg" alt="Rushi Patil" class="mx-auto w-36 h-36 rounded-full border-4 border-purple-300 shadow-md mb-6" />
+    <h2 class="text-3xl font-bold text-purple-700 mb-4">Hi, I'm Rushi Patil👋</h2>
+    <div class="max-w-3xl mx-auto rounded-lg overflow-hidden shadow-md aspect-video">
+      <iframe 
+        src="https://www.youtube.com/embed/9iIX4PBplAY"
+        title="Intro Video"
+        class="w-full rounded-xl shadow-xl aspect-video"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- Sections -->
+  <main class="space-y-10 px-4 max-w-4xl mx-auto">
+    <!-- About -->
+    <section id="about" class="bg-white p-6 rounded-lg shadow border-l-4 border-purple-400">
+      <h3 class="text-2xl font-semibold text-purple-700 mb-4">About Me</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Name: Rushi Patil</li>
+        <li>Location: Palghar, Maharashtra, India</li>
+        <li>Education: B.Tech in Computer Science</li>
+        <li>Languages: English, Hindi, Marathi</li>
+      </ul>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="bg-white p-6 rounded-lg shadow border-l-4 border-yellow-400">
+      <h3 class="text-2xl font-semibold text-yellow-600 mb-4">Achievements</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Won State-Level Hackathon 2022</li>
+        <li>Volunteered at ABC NGO, teaching coding 2023</li>
+        <li>Completed Full-Stack Developer Bootcamp 2024</li>
+        <li>Published Open Source Project with 1000+ stars</li>
+      </ul>
+    </section>
+
+    <!-- Goals -->
+    <section id="goals" class="bg-white p-6 rounded-lg shadow border-l-4 border-pink-400">
+      <h3 class="text-2xl font-semibold text-pink-600 mb-4">Future Goals</h3>
+      <p>I aim to become a full-stack developer and contribute to open-source projects. My goal is to innovate in the tech industry by building tools that improve everyday life and support educational initiatives worldwide.</p>
+    </section>
+
+    <!-- Personal -->
+    <section id="personal" class="bg-white p-6 rounded-lg shadow border-l-4 border-indigo-400">
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-4">Personal Side</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Hobbies: Sports, Cycling, Coding</li>
+        <li>Role Models: Bill Gates - for innovation</li>
+        <li>Favorite Books: Think and Grow Rich by Napoleon Hill</li>
+        <li>Favorite Startups: Notion, Figma</li>
+        <li>Volunteering: Taught coding in rural schools</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-white p-6 rounded-lg shadow border-l-4 border-purple-400">
+      <h3 class="text-2xl font-semibold text-purple-600 mb-4">Contact Me</h3>
+      <p class="mb-2">Phone: <a href="tel:+911234567890" class="text-blue-600">+91 1234567890</a></p>
+      <p class="mb-2">WhatsApp: <a href="https://wa.me/911234567890" class="text-green-600">Chat on WhatsApp</a></p>
+      <p class="mb-4">Email: <a href="mailto:Rushi@example.com" class="text-red-600">Rushi@example.com</a></p>
+      <iframe src="https://www.google.com/maps?q=Palghar,+Maharashtra,+India&output=embed" class="w-full h-64 rounded-lg border" loading="lazy"></iframe>
+      <div class="mt-4">
+        <p>Social Links:</p>
+        <a href="https://github.com/Rushipatil" class="text-gray-800 hover:underline">GitHub</a> |
+        <a href="https://linkedin.com/in/Rushipatil" class="text-blue-800 hover:underline">LinkedIn</a> |
+        <a href="https://instagram.com/Rushipatil" class="text-pink-600 hover:underline">Instagram</a>
+      </div>
+      <form action="#" class="mt-6 grid gap-4">
+        <input type="text" placeholder="Your Name" required class="p-3 border border-gray-300 rounded-lg focus:ring focus:ring-purple-200" />
+        <input type="email" placeholder="Your Email" required class="p-3 border border-gray-300 rounded-lg focus:ring focus:ring-purple-200" />
+        <textarea placeholder="Message" required class="p-3 border border-gray-300 rounded-lg focus:ring focus:ring-purple-200"></textarea>
+        <button type="submit" class="bg-purple-600 text-white py-2 rounded hover:bg-purple-700">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Scroll To Top -->
+  <button id="scrollToTop" class="fixed bottom-5 right-5 hidden bg-Black-600 text-white p-3 rounded-full shadow hover:bg-purple-700">↑</button>
+   <a href="shop.html" class="hover:text-purple-600">Shop</a>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    window.addEventListener('load', () => {
+      document.getElementById('loading').style.display = 'none';
+    });
+
+    const scrollBtn = document.getElementById('scrollToTop');
+    window.onscroll = () => {
+      scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    };
+    scrollBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rushi Shop | Trendy Tees</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-purple-600">Rushi Tees</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="index.html" class="hover:text-purple-600">Home</a>
+        <a href="#products" class="hover:text-purple-600">Products</a>
+        <button onclick="toggleCart()" class="relative hover:text-purple-600">
+          Cart 🛒 <span id="cart-count" class="bg-purple-500 text-white text-xs px-2 rounded-full ml-1">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-purple-100 text-center py-12">
+    <h2 class="text-3xl font-bold mb-2 text-purple-800">Trendy Tees for Everyone</h2>
+    <p class="text-lg text-purple-600">Stylish. Comfortable. Affordable.</p>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="max-w-6xl mx-auto px-4 py-12 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <!-- Example Product Card -->
+    <div class="bg-white p-4 rounded shadow hover:shadow-lg transition" onclick="addToCart('Tee #1', 499)">
+      <img src="white tee.jpg" alt="Tee 1" class="mb-4 rounded">
+      <h3 class="text-lg font-semibold">Cool White Tee</h3>
+      <p class="text-purple-600 font-bold">₹499</p>
+      <button class="mt-2 bg-purple-600 text-white px-4 py-1 rounded hover:bg-purple-700">Add to Cart</button>
+    </div>
+    <div class="bg-white p-4 rounded shadow hover:shadow-lg transition" onclick="addToCart('Tee #2', 599)">
+      <img src="grey tee.jpg" alt="Tee 2" class="mb-4 rounded">
+      <h3 class="text-lg font-semibold">Black Graphic Tee</h3>
+      <p class="text-purple-600 font-bold">₹599</p>
+      <button class="mt-2 bg-purple-600 text-white px-4 py-1 rounded hover:bg-purple-700">Add to Cart</button>
+    </div>
+    <!-- Add more products similarly -->
+  </section>
+
+  <!-- Cart Sidebar -->
+  <aside id="cartSidebar" class="fixed top-0 right-0 w-80 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50 p-4 overflow-y-auto">
+    <h3 class="text-xl font-bold mb-4 text-purple-700">Your Cart</h3>
+    <div id="cart-items" class="space-y-3"></div>
+    <p class="mt-4 font-semibold">Total: ₹<span id="cart-total">0</span></p>
+    <button class="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Checkout</button>
+    <button onclick="toggleCart()" class="mt-4 block text-red-500 underline">Close Cart</button>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow mt-12 py-6 text-center text-gray-600">
+    <p>&copy; 2025 Rushi Patil | <a href="contact.html" class="text-purple-600 hover:underline">Contact</a> | <a href="#" class="hover:underline">Terms</a></p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    let cart = [];
+
+    function toggleCart() {
+      document.getElementById('cartSidebar').classList.toggle('translate-x-full');
+    }
+
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      updateCart();
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      updateCart();
+    }
+
+    function updateCart() {
+      const cartItemsDiv = document.getElementById('cart-items');
+      cartItemsDiv.innerHTML = '';
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        total += item.price;
+        cartItemsDiv.innerHTML += `
+          <div class="flex justify-between items-center border-b pb-2">
+            <div>
+              <p class="font-medium">${item.name}</p>
+              <p class="text-sm text-gray-500">₹${item.price}</p>
+            </div>
+            <button onclick="removeFromCart(${index})" class="text-red-500 hover:underline">Remove</button>
+          </div>`;
+      });
+
+      document.getElementById('cart-count').textContent = cart.length;
+      document.getElementById('cart-total').textContent = total;
+    }
+  </script>
+
+</body>
+</html>
